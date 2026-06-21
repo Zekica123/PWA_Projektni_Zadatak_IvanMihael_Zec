@@ -11,7 +11,7 @@ if ($razina < 1) {
 
 $servername = "sql203.infinityfree.com";
 $username   = "if0_42222334";
-$password   = "lcHD7lmGghsihY";
+$password   = ""; //ovdje se inace nalazi sifra, ali zbog sigurnosnih razloga je maknuta
 $basename   = "if0_42222334_vijesti";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
