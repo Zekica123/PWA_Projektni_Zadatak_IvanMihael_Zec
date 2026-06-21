@@ -5,10 +5,9 @@ header('Content-Type: text/html; charset=utf-8');
 
 $servername = "sql203.infinityfree.com";
 $username   = "if0_42222334";
-$password   = "lcHD7lmGghsihY"; // ovo mora biti pravi password iz panela
+$password   = "lcHD7lmGghsihY"; 
 $basename   = "if0_42222334_vijesti";
 
-// Uključi mysqli error reporting da baca exceptione
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try {
