@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+
+  background-color: rgb(206, 206, 206);
+}
+
+.popis {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: white;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 5px;
+}
+
+.popis article {
+  width: 95%;
+  margin: 0 auto;
+}
+.popis article img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.popis button {
+  background-color: unset;
+  border: 0;
+  padding: 15px;
+  font-size: 1.1rem;
+  width: 100%;
+}
+.popis button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .popis {
+    padding: 25px;
+    width: 80%;
+  }
+  .popis article img {
+    height: 350px;
+  }
+  .popis button {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .popis {
+    padding: 25px;
+    width: 95%;
+  }
+  .popis article img {
+    height: 300px;
+    width: 100%;
+  }
+  .popis button {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}

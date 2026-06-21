@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(206, 206, 206);
+}
+.vijesti {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: white;
+  height: 100%;
+  padding: 25px;
+  border-radius: 5px;
+}
+.vijesti hr {
+  width: 95%;
+  background-color: black;
+  height: 2px;
+  border: 0;
+  margin: 0 auto;
+}
+.vijesti h2 {
+  padding: 25px;
+}
+.politika,
+.sport {
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.vijesti article {
+  height: fit-content;
+  flex: 0 0 30%;
+}
+.vijesti button {
+  background-color: unset;
+  border: 0;
+  padding: 15px;
+  font-size: 1.1rem;
+  width: 100%;
+}
+.vijesti button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.vijesti img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .vijesti {
+    padding: 25px;
+    width: 80%;
+  }
+  .vijesti h2 {
+    padding: 20px;
+  }
+  .politika,
+  .sport {
+    width: 95%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .vijesti article {
+    height: fit-content;
+    flex: 0 0 45%;
+  }
+  .vijesti img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .vijesti button {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .vijesti {
+    padding: 25px;
+    width: 95%;
+  }
+  .vijesti h2 {
+    padding: 15px;
+  }
+  .vijesti article {
+    width: 100%;
+    flex: unset;
+  }
+  .vijesti img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .vijesti button {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
